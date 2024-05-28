@@ -1,0 +1,215 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 30px;
+    color: #FFA24C;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoimg {
+    width: 15%;
+    margin: 0 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu_item {
+    margin-right: 30px;
+    display: flex;
+}
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    display: none;
+    height: 2em;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 3px;
+    background: #FFA24C;
+}
+
+.product {
+    margin-bottom: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.carousel {
+    margin-left: 5%;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bx-wrapper {
+    width: 500px;
+}
+
+.slider-nav > div {
+    float: left;
+    border: 3px solid #fff;
+}
+
+.slider-nav > div a {
+    display: block;
+    cursor: pointer;
+}
+
+.slider-nav > div a.active {
+    border-bottom: 3px solid #FFA24C;
+}
+
+.text {
+    margin-left: 50px;
+}
+
+.details {
+    color: #909090;
+    width: 80%;
+}
+
+.prices {
+    display: flex;
+}
+
+.pricep {
+    text-decoration: line-through;
+}
+
+.pricep, .saleprice {
+    font-size: 24px;
+    margin: 5px 0;
+    margin-right: 20px;
+}
+
+.btn {
+    background-color: #FFA24C;
+    padding: 10px;
+    color: white;
+    font-size: 28px;
+    border: none;
+}
+
+footer {
+    background-color: #FFA24C;
+    padding: 20px;
+    color: white;
+    font-size: 16px;
+}
+
+@media (max-width: 800px) {
+    .logoimg {
+        margin: 0 15px;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+    .menu-small {
+        z-index: 2;
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        background: white;
+        transform: translateX(-100%);
+    }
+
+    a {
+        font-size: 24px;
+    }
+
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 30%;
+        align-items: center;
+    }
+
+    .menu_small_item:first-child {
+        padding-top: 20%;
+    }
+
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        width: 50px;
+        height: 40px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .card {
+        flex-direction: column;
+    }
+
+    .bx-wrapper {
+        width: 90%;
+    }
+
+    .text {
+        margin-left: 30px;
+    }
+
+    .details {
+        width: 90%;
+    }
+}

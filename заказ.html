@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="заказ.css">
+    <script src="anime.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<header>
+    <div class="logo">
+        <img src="images/logo.svg" alt="логотип" class="logoimg">
+        <h1>Пятнашки</h1>
+    </div>
+</header>
+<div class="container">
+    <div class="menu">
+        <a href="shop.html"><div class="menu_item">Магазин</div></a>
+        <a href="index.html"><div class="menu_item">Главная</div></a>
+    </div>
+    <div class="menu_small_icon">
+        <div class="stick"></div>
+        <div class="stick"></div>
+        <div class="stick"></div>
+    </div>
+    <div class="menu-small">
+        <a class="scroll" href="shop.html"><div class="menu_small_item">Магазин</div></a>
+        <a class="scroll" href="index.html"><div class="menu_small_item">Главная</div></a>
+    </div>
+</div>
+<main>
+    <form action="">
+        <h2>Заполните форму заказа</h2>
+        <div class="user">
+            <div class="userinfo">
+                <label for="name">ФИО</label>
+                <input type="text" placeholder="Введите ваше ФИО" name="name" id="name">
+                <label for="telephone">Телефон</label>
+                <input type="tel" placeholder="Введите номер телефона" name="telephone" id="telephone">
+                <label for="email">Email</label>
+                <input type="email" placeholder="Введите вашу электронную почту" name="email" id="email">
+            </div>
+            <div class="userinfo">
+                <label for="adress">Адрес</label>
+                <input type="text" placeholder="Введите ваш адрес" name="adress" id="adress">
+                <label for="date">Дата доставки</label>
+                <input type="date" name="date" id="date">
+                <h3>Способ доставки</h3>
+                <div class="way">
+                    <input type="radio" name="way" id="way1" class="radio">
+                    <label for="way1">Курьер</label>
+                </div>
+                <div class="way">
+                    <input type="radio" name="way" id="way2" class="radio">
+                    <label for="way2">Почта</label>
+                </div>
+                <div class="way">
+                    <input type="radio" name="way" id="way3" class="radio">
+                    <label for="way3">Самовывоз</label>
+                </div>
+            </div>
+        </div>
+        <div class="content">
+            <div class="pay">
+                <h4>Оставьте свой комментарий <br>и выберите способ оплаты</h4>
+                <select name="" id="">
+                    <option value="">Онлайн</option>
+                    <option value="">Наличными при получении</option>
+                    <option value="">Картой при получении</option>
+                </select>
+            </div>
+            <div class="options">
+                <h3>Дополнительные услуги</h3>
+                <div class="way">
+                    <input type="checkbox" name="way" id="way4" class="checkbox">
+                    <label for="way4">Быстрый курьер</label>
+                </div>
+                <div class="way">
+                    <input type="checkbox" name="way" id="way5" class="checkbox">
+                    <label for="way5">Грузчик</label>
+                </div>
+                <div class="way">
+                    <input type="checkbox" name="way" id="way6" class="checkbox">
+                    <label for="way6">Доставка за город</label>
+                </div>
+            </div>
+        </div>
+        <div class="area">
+            <label for="text">Допольнительная информация</label>
+            <textarea name="text" id="text" ></textarea>
+        </div>
+        <a href="">
+            <button class="btn">Отправить</button>
+        </a>
+    </form>
+</main>
+<footer>
+    <p class="footerp">copyright 2024 пятнашки</p>
+</footer>
+<script src="script.js"></script>
+</body>
+</html>

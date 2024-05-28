@@ -1,0 +1,536 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+h1 {
+    font-size: 30px;
+    color: #FFA24C;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logoimg {
+    width: 15%;
+    margin: 0 30px;
+}
+
+.container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: column;
+}
+
+.menu {
+    position: absolute;
+    right: 0;
+    top: 40px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    font-size: 20px;
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+.menu_item {
+    margin-right: 30px;
+    display: flex;
+}
+
+.menu_small_icon {
+    display: none;
+}
+
+.menu-small {
+    display: none;
+    height: 2em;
+}
+
+.menu_small_item {
+    display: none;
+}
+
+.stick {
+    width: 80%;
+    height: 3px;
+    background: #FFA24C;
+}
+
+.baner {
+    display: flex;
+    align-items: center;
+}
+
+h2, h3, h4, h5, h6 {
+    font-size: 36px;
+}
+
+.baner2 {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: #D0EFF4;
+}
+
+.banerp {
+    animation: anim 3s 1;
+    width: 60%;
+    text-align: center;
+    color: white;
+    font-size: 40px;
+}
+
+@keyframes anim {
+    0%{
+        opacity: 0;
+        transform: translate(0, 150px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.banerimg {
+    width: 40%;
+    animation: anime 4s 1;
+}
+
+@keyframes anime {
+    0%{
+        opacity: 0;
+        transform: translate(150px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.sale2 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.saleimg {
+    width: 60%;
+    animation: anim2 6s 1;
+}
+
+@keyframes anim2 {
+    0%{
+        opacity: 0;
+        transform: translate(-150px, 0);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+}
+
+.saletext {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+}
+
+h3 {
+    width: 80%;
+    animation: anim 6s 1;
+}
+
+.salep {
+    width: 80%;
+    color: #AAAAAA;
+    animation: anim 6s 1;
+    animation-delay: .8s;
+}
+
+.salea {
+    margin-top: 20px;
+    margin-right: 32%;
+}
+
+.salebtn {
+    background-color: #FFA24C;
+    padding: 10px;
+    color: white;
+    font-size: 28px;
+    border: none;
+    animation: anim 6s 1;
+    animation-delay: 1.6s;
+    transition: transform 0.5s;
+}
+
+.salebtn:hover {
+    transform: scale(1.1);
+}
+
+h2 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.shop2 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    animation: anime 8s 1;
+}
+
+.cards {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-bottom: 30px;
+}
+
+.card {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.cardimg {
+    width: 70%;
+}
+
+.price {
+    margin-bottom: 5px;
+}
+
+.cardp {
+    margin-top: 5px;
+}
+
+.shopa {
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.shopbtn {
+    background-color: #FFA24C;
+    padding: 10px;
+    color: white;
+    font-size: 30px;
+    border: none;
+    margin-bottom: 50px;
+    transition: transform 0.5s;
+    animation: anim 2s 1;
+}
+
+.shopbtn:hover {
+    transform: scale(1.1);
+}
+
+.delivery {
+    margin-bottom: 50px;
+}
+
+.deliv {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 100%;
+}
+
+h4 {
+    text-align: center;
+}
+
+.textdel {
+    width: 45%;
+}
+
+.way {
+    padding: 3px 0;
+}
+
+#way1 {
+    animation: anim2 2s 1;
+    animation-delay: 5s;
+}
+
+#way2 {
+    animation: anim2 2s 1;
+    animation-delay: 5.4s;
+}
+
+#way3 {
+    animation: anim2 2s 1;
+    animation-delay: 5.8s;
+}
+
+.name, .pricedel {
+    font-size: 24px;
+    font-weight: 700;
+}
+
+.deliveryimg {
+    animation: anime 4s 1;
+    animation-delay: 5.1s;
+}
+
+.contact {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+h5 {
+    text-align: center;
+}
+
+.icons {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 37%;
+    padding-left: 100px;
+    animation: anim2 4s 1;
+    animation-delay: 5.4s;
+}
+
+.textcont {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50%;
+    padding-bottom: 70px;
+    animation: anim 4s 1;
+    animation-delay: 5.4s;
+}
+
+.waycont {
+    width: 70%;
+    margin-bottom: 90px;
+}
+
+.contbtn {
+    font-size: 24px;
+    color: #FFA24C;
+    background-color: #D0EFF4;
+    padding: 10px;
+    border: none;
+    transition: transform 0.5s;
+}
+
+.contbtn:hover {
+    transform: scale(1.1);
+}
+
+.icon {
+    margin-bottom: 32px;
+}
+
+.aboutus {
+    margin-bottom: 50px;
+}
+
+h6 {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.abouttext {
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin-left: 10vw;
+    animation: anim2 4s 1;
+    animation-delay: 6.2s;
+}
+
+.aboutp {
+    width: 80%;
+    font-size: 24px;
+}
+
+.advantages {
+    display: flex;
+    width: 85%;
+}
+
+.adv {
+    margin-left: 30px;
+}
+
+.about {
+    font-size: 24px;
+} 
+
+footer {
+    background-color: #FFA24C;
+    padding: 20px 0 20px 10%;
+    color: white;
+    font-size: 16px;
+}
+
+@media (max-width: 800px) {
+    .logoimg {
+        margin: 0 15px;
+    }
+    
+    .menu {
+        display: none;
+    }
+
+    .menu-small {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+        width: 100%;
+        padding: 0;
+        position: absolute;
+        background: white;
+        transform: translateX(-100%);
+    }
+
+    a {
+        font-size: 24px;
+    }
+
+    .menu_small_item {
+        height: 2em;
+        display: flex;
+        justify-content: flex-start;
+        margin-left: 30%;
+        align-items: center;
+    }
+
+    .menu_small_item:first-child {
+        padding-top: 20%;
+    }
+
+    .menu_small_icon {
+        position: absolute;
+        top: 1em;
+        right: 1em;
+        width: 50px;
+        height: 40px;
+        display: flex;
+        z-index: 1;
+        justify-content: space-around;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .baner2 {
+        flex-direction: column;
+    }
+
+    .banerimg {
+        width: 100%;
+    }
+
+    .banerp {
+        font-size: 26px;
+        padding: 40px;
+    }
+
+    .saleimg {
+        width: 100%;
+        margin-top: 20px;
+    }
+
+    .sale2 {
+        flex-direction: column-reverse;
+    }
+
+    .salea {
+        margin-left: 20%;
+    }
+
+    .saletext {
+        width: 100%;
+    }
+
+    .salebtn {
+        font-size: 20px;
+        white-space: nowrap;
+        margin-left: 10%;
+    }
+
+    .price {
+        font-size: 18px;
+    }
+
+    .cardp {
+        width: 70%;
+        font-size: 14px;
+        text-align: center;
+    }
+    
+    .shopbtn {
+        font-size: 20px;
+    }
+
+    .deliv {
+        flex-direction: column;
+    }
+
+    .textdel {
+        width: 80%;
+    }
+
+    .deliveryimg {
+        width: 100%;
+    }
+
+    .icons {
+        padding-left: 20px;
+    }
+
+    .icon {
+        width: 60%;
+    }
+
+    .waycont {
+        width: 100%;
+        margin-bottom: 30px;
+    }
+
+    .adv {
+        margin-left: 15px;
+        font-size: 14px;
+    }
+
+    .aboutp, .about {
+        font-size: 18px;
+    }
+
+    .details {
+        font-size: 18px;
+    }
+
+    .deliveryimg {
+        width: 50%;
+    }
+}
